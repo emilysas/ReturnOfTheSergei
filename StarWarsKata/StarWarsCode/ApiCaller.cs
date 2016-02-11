@@ -2,7 +2,7 @@
 {
     public class ApiCaller
     {
-        public object GetOpeningCredits()
+        public string GetOpeningCredits()
         {
             return "Star Wars yay";
         }
