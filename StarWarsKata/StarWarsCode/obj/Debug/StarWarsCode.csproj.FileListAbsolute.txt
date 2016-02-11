@@ -1,0 +1,5 @@
+C:\Projects\ReturnOfTheSergei\StarWarsKata\StarWarsCode\bin\Debug\StarWarsCode.dll
+C:\Projects\ReturnOfTheSergei\StarWarsKata\StarWarsCode\bin\Debug\StarWarsCode.pdb
+C:\Projects\ReturnOfTheSergei\StarWarsKata\StarWarsCode\obj\Debug\StarWarsCode.csprojResolveAssemblyReference.cache
+C:\Projects\ReturnOfTheSergei\StarWarsKata\StarWarsCode\obj\Debug\StarWarsCode.dll
+C:\Projects\ReturnOfTheSergei\StarWarsKata\StarWarsCode\obj\Debug\StarWarsCode.pdb
