@@ -4,7 +4,7 @@
     {
         public object GetOpeningCredits()
         {
-            return null;
+            return "Star Wars yay";
         }
     }
 }
