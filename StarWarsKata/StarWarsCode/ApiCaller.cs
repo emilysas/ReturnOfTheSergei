@@ -1,10 +1,17 @@
-﻿namespace StarWarsCode
+﻿using System.Net.Http;
+
+namespace StarWarsCode
 {
     public class ApiCaller
     {
-        public string GetOpeningCredits()
+        public string GetFilmInfo()
         {
-            return "Star Wars yay";
+            var apiPath = "http://swapi.co/api/films/1";
+            var httpClient = new HttpClient();
+            var response = httpClient.GetAsync(apiPath).Result;
+            var filmInfo = response.Content.ReadAsStringAsync().Result;
+            
+            return filmInfo;
         }
     }
 }

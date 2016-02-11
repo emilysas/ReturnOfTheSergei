@@ -10,16 +10,16 @@ namespace StarWarsTests
         public void APICallerShouldReturnText()
         {
             var apiCaller = new ApiCaller();
-            var openingCreditsText = apiCaller.GetOpeningCredits();
+            var openingCreditsText = apiCaller.GetFilmInfo();
             Assert.That(openingCreditsText, Is.Not.Null);
         }
 
         [Test]
-        public void APICallerShouldReturnStarWarsOpeningCredits()
+        public void APICallerShouldReturnStarWarsFilmInfo()
         {
             var apiCaller = new ApiCaller();
-            var openingCreditsText = apiCaller.GetOpeningCredits();
-            Assert.That(openingCreditsText.Contains("Empire"));
+            var openingCreditsText = apiCaller.GetFilmInfo();
+            Assert.That(openingCreditsText.Contains("opening_crawl"));
         }
     }
 }
