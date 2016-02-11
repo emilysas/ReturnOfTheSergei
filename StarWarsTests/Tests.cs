@@ -33,5 +33,12 @@ namespace StarWarsTests
             var afurtherOpeningCrawl = apiCaller.GetOpeningCrawl();
             Assert.That(openingCrawl != anotherOpeningCrawl && openingCrawl != afurtherOpeningCrawl);
         }
+
+        [Test]
+        public void APICallerReplacesOriginalCharacterNamesWithMeerkats()
+        {
+            var apiCaller = new ApiCaller();
+            Assert.That(apiCaller.GetOpeningCrawl().Contains("Sergei"));
+        }
     }
 }
