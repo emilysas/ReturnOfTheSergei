@@ -38,7 +38,7 @@ namespace StarWarsTests
         public void APICallerReplacesOriginalCharacterNamesWithMeerkats()
         {
             var apiCaller = new ApiCaller();
-            Assert.That(apiCaller.GetOpeningCrawl().Contains("Sergei"));
+            Assert.That(apiCaller.GetOpeningCrawl().Contains("Meerkat"));
         }
     }
 }
