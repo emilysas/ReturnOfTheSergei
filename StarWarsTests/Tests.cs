@@ -15,14 +15,6 @@ namespace StarWarsTests
         }
 
         [Test]
-        public void APICallerShouldReturnStarWarsFilmInfo()
-        {
-            var apiCaller = new ApiCaller();
-            var openingCreditsText = apiCaller.GetFilmInfo();
-            Assert.That(openingCreditsText.Contains("opening_crawl"));
-        }
-
-        [Test]
         public void APICallerShouldGetOpeningCrawlFromFilmInfo()
         {
             var apiCaller = new ApiCaller();

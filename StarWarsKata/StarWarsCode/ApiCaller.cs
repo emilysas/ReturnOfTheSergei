@@ -1,22 +1,24 @@
-﻿using System.Net.Http;
+﻿using System.Net;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace StarWarsCode
 {
     public class ApiCaller
     {
-        public string GetFilmInfo()
+        public FilmInfo GetFilmInfo()
         {
             var apiPath = "http://swapi.co/api/films/1";
-            var httpClient = new HttpClient();
-            var response = httpClient.GetAsync(apiPath).Result;
-            var filmInfo = response.Content.ReadAsStringAsync().Result;
-            
+            var client = new WebClient();
+            var json = client.DownloadString(apiPath);
+            var filmInfo = JsonConvert.DeserializeObject<FilmInfo>(json);
             return filmInfo;
         }
 
         public string GetOpeningCrawl()
         {
-            return "something";
+            var filmInfo = GetFilmInfo();
+            return filmInfo.opening_crawl;
         }
     }
 }

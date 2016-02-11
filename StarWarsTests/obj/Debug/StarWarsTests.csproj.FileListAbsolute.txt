@@ -7,3 +7,4 @@ C:\Projects\ReturnOfTheSergei\StarWarsTests\bin\Debug\nunit.framework.xml
 C:\Projects\ReturnOfTheSergei\StarWarsTests\obj\Debug\StarWarsTests.csprojResolveAssemblyReference.cache
 C:\Projects\ReturnOfTheSergei\StarWarsTests\obj\Debug\StarWarsTests.dll
 C:\Projects\ReturnOfTheSergei\StarWarsTests\obj\Debug\StarWarsTests.pdb
+C:\Projects\ReturnOfTheSergei\StarWarsTests\bin\Debug\Newtonsoft.Json.dll
