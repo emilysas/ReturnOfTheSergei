@@ -21,5 +21,15 @@ namespace StarWarsTests
             var openingCrawl = apiCaller.GetOpeningCrawl();
             Assert.That(openingCrawl.Contains("Empire"));
         }
+
+        [Test]
+        public void APICallerReturnsOpeningCrawlFromAnyOfThe7FilmsAtRandom()
+        {
+            var apiCaller = new ApiCaller();
+            var openingCrawl = apiCaller.GetOpeningCrawl();
+            var anotherOpeningCrawl = apiCaller.GetOpeningCrawl();
+            var afurtherOpeningCrawl = apiCaller.GetOpeningCrawl();
+            Assert.That(openingCrawl != anotherOpeningCrawl && openingCrawl != afurtherOpeningCrawl);
+        }
     }
 }
