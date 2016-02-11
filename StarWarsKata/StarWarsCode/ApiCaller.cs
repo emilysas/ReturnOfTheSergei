@@ -13,5 +13,10 @@ namespace StarWarsCode
             
             return filmInfo;
         }
+
+        public string GetOpeningCrawl()
+        {
+            return "something";
+        }
     }
 }

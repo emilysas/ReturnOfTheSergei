@@ -21,5 +21,13 @@ namespace StarWarsTests
             var openingCreditsText = apiCaller.GetFilmInfo();
             Assert.That(openingCreditsText.Contains("opening_crawl"));
         }
+
+        [Test]
+        public void APICallerShouldGetOpeningCrawlFromFilmInfo()
+        {
+            var apiCaller = new ApiCaller();
+            var openingCrawl = apiCaller.GetOpeningCrawl();
+            Assert.That(openingCrawl.Contains("Empire"));
+        }
     }
 }
